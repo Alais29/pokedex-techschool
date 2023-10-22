@@ -9,6 +9,8 @@ import { styled } from "@mui/material/styles";
 
 const CustomLink = styled(Link)`
   text-decoration: none;
+  height: 100%;
+  display: block;
 `;
 
 function Root() {

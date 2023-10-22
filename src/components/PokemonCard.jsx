@@ -9,7 +9,7 @@ import { CardActionArea } from "@mui/material";
 
 const PokemonCard = (props) => {
   return (
-    <Card key={props.pokemonName}>
+    <Card key={props.pokemonName} sx={{ height: "100%", display: "flex" }}>
       <CardActionArea
         sx={{
           display: "flex",
