@@ -38,6 +38,7 @@ const PokemonCard = (props) => {
             variant="h5"
             component="div"
             sx={{ textAlign: "center" }}
+            color={"error"}
           >
             {props.pokemonNumber}. {props.pokemonName}
           </Typography>
