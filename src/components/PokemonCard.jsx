@@ -29,7 +29,7 @@ const PokemonCard = (props) => {
             onError={(e) => (e.target.src = ImgNotAvailable)}
             width="96px"
             height="96px"
-            placeholder={<CircularProgress />}
+            placeholder={<CircularProgress color="error" />}
           />
         </CardMedia>
         <CardContent>
