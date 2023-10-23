@@ -43,7 +43,7 @@ const PokemonDetails = () => {
   return (
     <>
       <ScrollRestoration />
-      <Header title={capitalizeWord(pokemon.name)} />
+      <Header title={capitalizeWord(pokemon.name)} showHomeBtn />
       <Container maxWidth="md" sx={{ padding: "1.5rem" }}>
         <Typography variant="h4" component="h2" gutterBottom align="center">
           # {pokemon.id}
