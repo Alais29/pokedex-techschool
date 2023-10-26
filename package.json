@@ -1,7 +1,18 @@
 {
   "name": "pokedex-react",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Simple Pokedex app built using with React, Vite, Material UI and React Router. Pokemon data is gotten from PokeAPI",
+  "author": "Alfonsina Lizardo",
+  "homepage": "https://github.com/Alais29/pokedex-techschool#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alais29/pokedex-techschool.git"
+  },
+  "engines": {
+    "npm": ">=9.6.4",
+    "node": ">=18.4.0"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
