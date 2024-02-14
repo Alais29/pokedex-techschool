@@ -11,10 +11,10 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import { capitalizeWord } from "../utils/capitalizeWord";
 import { styled } from "@mui/material/styles";
 import { ScrollRestoration } from "react-router-dom";
 import ImgNotAvailable from "../assets/Image_not_available.png";
+import { capitalize } from "@mui/material";
 
 const ImgContainer = styled("div")`
   display: flex;
@@ -43,7 +43,7 @@ const PokemonDetails = () => {
   return (
     <>
       <ScrollRestoration />
-      <Header title={capitalizeWord(pokemon.name)} showHomeBtn />
+      <Header title={capitalize(pokemon.name)} showHomeBtn />
       <Container maxWidth="md" sx={{ padding: "1.5rem" }}>
         <Typography variant="h4" component="h2" gutterBottom align="center">
           # {pokemon.id}
@@ -78,7 +78,7 @@ const PokemonDetails = () => {
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
                       <TableCell component="th" scope="row">
-                        {capitalizeWord(stat.stat.name)}
+                        {capitalize(stat.stat.name)}
                       </TableCell>
                       <TableCell>{stat.base_stat}</TableCell>
                     </TableRow>
@@ -94,10 +94,7 @@ const PokemonDetails = () => {
             <List>
               {pokemon.types.map((type) => (
                 <ListItem key={type.type.name}>
-                  <Chip
-                    label={capitalizeWord(type.type.name)}
-                    color="secondary"
-                  />
+                  <Chip label={capitalize(type.type.name)} color="secondary" />
                 </ListItem>
               ))}
             </List>
@@ -108,7 +105,7 @@ const PokemonDetails = () => {
               {pokemon.abilities.map((ability) => (
                 <ListItem key={ability.ability.name}>
                   <Chip
-                    label={capitalizeWord(ability.ability.name)}
+                    label={capitalize(ability.ability.name)}
                     color="primary"
                   />
                 </ListItem>
@@ -123,7 +120,7 @@ const PokemonDetails = () => {
           {pokemon.moves.map((move) => (
             <ListItem key={move.move.name}>
               <Chip
-                label={capitalizeWord(move.move.name)}
+                label={capitalize(move.move.name)}
                 color="success"
                 variant="outlined"
               />

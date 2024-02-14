@@ -7,7 +7,7 @@ import Grid from "@mui/material/Grid";
 import { styled } from "@mui/material/styles";
 import Header from "../components/Header";
 import PokemonCard from "../components/PokemonCard";
-import { capitalizeWord } from "../utils/capitalizeWord";
+import { capitalize } from "@mui/material";
 
 const CustomLink = styled(Link)`
   text-decoration: none;
@@ -44,7 +44,7 @@ function Root() {
               <Grid key={item.name} item xs={12} sm={6} md={4}>
                 <CustomLink to={`pokemon/${index + 1}`}>
                   <PokemonCard
-                    pokemonName={capitalizeWord(item.name)}
+                    pokemonName={capitalize(item.name)}
                     pokemonNumber={index + 1}
                   />
                 </CustomLink>
