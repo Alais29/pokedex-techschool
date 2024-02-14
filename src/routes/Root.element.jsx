@@ -22,7 +22,7 @@ function Root() {
   const [nextPage, setNextPage] = useState(next);
 
   const fetchNextPage = async () => {
-    const data = await fetch(next);
+    const data = await fetch(nextPage);
     const dataJson = await data.json();
     setPokemonList((prev) => [...prev, ...dataJson.results]);
     setNextPage(dataJson.next);
