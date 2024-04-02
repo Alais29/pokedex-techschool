@@ -45,9 +45,9 @@ npm run dev
 
 - Website: https://alfonsinalizardo.netlify.app
 - GitHub: [@Alais29](https://github.com/Alais29)
-- LinkedIn: [@alfonsinalizardo](https://linkedin.com/in/alfonsinalizardo)
-- Instagram: [@Alais29.dev](https://www.instagram.com/alais29.dev/)
-- Threads: [@Alais29.dev](https://www.threads.net/@alais29.dev)
+- LinkedIn: [@Alais29dev](https://linkedin.com/in/Alais29dev)
+- Instagram: [@Alais29dev](https://www.instagram.com/alais29dev/)
+- Threads: [@Alais29dev](https://www.threads.net/@alais29dev)
 
 ## Show your support
 
